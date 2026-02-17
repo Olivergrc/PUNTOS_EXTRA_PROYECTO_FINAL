@@ -1,0 +1,51 @@
+INICIO
+Definir precio_base y porcentajes de recargo.
+
+MIENTRAS (verdadero)
+  Pedir al usuario: "Escriba Salir para terminar o Aceptar para cotizar"
+  Si la entrada es "SALIR" entonces
+     Mostrar "Programa finalizado"
+     SALIR del ciclo
+  Fin Si
+
+  Pedir nombre
+  Pedir edad
+  Validar edad (número y >= 18)
+
+  Pedir si está casado (SI/NO)
+  Si está casado
+     Pedir edad del cónyuge
+     Validar edad del cónyuge
+  Fin Si
+
+  Pedir si tiene hijos (SI/NO)
+  Si tiene hijos
+     Pedir cantidad de hijos
+     Validar cantidad de hijos
+  Si no
+     cantidad_hijos = 0
+  Fin Si
+
+  Pedir cantidad de propiedades
+  Validar propiedades
+
+  Pedir salario mensual
+  Validar salario
+
+  recargo_total = 0
+
+  Calcular recargo por edad del asegurado y sumarlo a recargo_total
+  Si está casado, calcular recargo por edad del cónyuge y sumarlo
+  Si cantidad_hijos > 0, calcular recargo por hijos y sumarlo
+
+  Calcular recargo extra por propiedades:
+     recargo_total += precio_base * 0.35 * propiedades
+
+  Calcular recargo extra por salario:
+     recargo_total += salario * 0.05
+
+  precio_final = precio_base + recargo_total
+
+  Mostrar recargo_total y precio_final
+FIN MIENTRAS
+FIN

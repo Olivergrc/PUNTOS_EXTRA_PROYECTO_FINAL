@@ -1,0 +1,10 @@
+Descripción del problema
+
+Se tiene un programa que hace una cotización de seguro usando un precio base y recargos según datos del cliente (edad, si está casado, edad del cónyuge y cantidad de hijos). 
+La tarea pide modificarlo para que el programa permita hacer varias cotizaciones y solo se detenga cuando el usuario escriba la palabra "Salir".
+
+Además, se deben agregar dos recargos extra:
+1) Un recargo del 35% de la cotización por cada propiedad que tenga el asegurado.
+2) Un recargo del 5% aplicado sobre el salario del asegurado.
+
+Al final de cada cotización el programa debe mostrar el total de recargos y el precio final.
